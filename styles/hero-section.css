@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color-01: #fffff0;
+  --button-text-01: #546e94;
+  --button-hover-color: #f5d3dd;
+  --text-color-02: #e8f0fd;
+  --glass-color-02: #fdfdfd7d;
+  --text-color-03: #546e94b1;
+}
+@media (min-width: 375px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    z-index: 100;
+  }
+  .header .logo {
+    font-size: 1.1rem;
+    color: var(--text-color-02);
+  }
+  .header .menu {
+    font-size: 1.1rem;
+    color: var(--text-color-02);
+  }
+  .slogan {
+    padding-top: 1.5rem;
+    font-size: 3rem;
+    line-height:65px;
+  }
+  .slogan span{
+    padding:.2rem 1.5rem;
+    background-color:var(--button-text-01);
+    border-radius:50px;
+    transform:rotate(10deg);
+    display:inline-block
+  }
+  .sub-slogan {
+    padding: 2rem 0;
+    font-size: 1rem;
+    color: var(--text-color-02);
+  }
+  .hero-section {
+    background-image: url(/img/hero-section-mobile.jpeg);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-color-01);
+  }
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .hero-section h1,
+  .hero-section h4 {
+    text-align: center;
+    z-index: 100;
+    margin: 0 10px;
+  }
+  .shop-now {
+    padding: 15px 20px;
+    border-radius: 100px;
+    z-index: 100;
+    font-size: 1rem;
+    border: 0;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s ease-in-out;
+    background-color: var(--text-color-01);
+  }
+  .shop-now a {
+    text-decoration: none;
+  }
+  .shop-now::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+    background-color: var(--button-hover-color);
+  }
+  .shop-now:hover::before {
+    transform: scaleX(1);
+  }
+  .shop-now:hover {
+    color: var(--button-text-01);
+  }
+  .socials {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15vw;
+  }
+  .socials a {
+    font-size: 1.5rem;
+    z-index: 100;
+    text-decoration: none;
+    color: var(--text-color-02);
+  }
+  .drop-down {
+    background-color: var(--glass-color-02);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    transform: scaleX(0);
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+    padding: 0 2rem;
+    z-index: 200;
+    font-weight: 600;
+  }
+  .drop-down ul li {
+    list-style: none;
+    color: var(--button-text-01);
+    position: relative;
+    width: fit-content;
+    margin: 4rem 0;
+  }
+  .drop-down ul a {
+    text-decoration: none;
+  }
+  .drop-down ul li::after {
+    content: "";
+    border: var(--button-text-01) solid 1px;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+  }
+  .drop-down ul li:active::after {
+    transform: scaleX(1);
+  }
+  .drop-down ul li:hover {
+    color: var(--text-color-03);
+  }
+  .drop-down i {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    color: var(--button-text-01);
+  }
+}
