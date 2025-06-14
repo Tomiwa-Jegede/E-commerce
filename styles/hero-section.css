@@ -10,6 +10,7 @@
   --text-color-02: #e8f0fd;
   --glass-color-02: #fdfdfd7d;
   --text-color-03: #546e94b1;
+  --product-container-color:#dedcdc;
 }
 @media (min-width: 375px) {
   .header {

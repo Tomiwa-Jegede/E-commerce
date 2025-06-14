@@ -1,31 +1,22 @@
 @media (min-width: 375px) {
   .shop {
-    border: red solid 1px;
     height: 100vh;
     background-color: var(--glass-color-02);
-    overflow: hidden;
     position: relative;
   }
-  .shop::before {
-    content: "";
-    position: absolute;
-    left: 2px;
-    bottom: 0;
-    background-color: #fdfdfd;
-    height: 90px;
-    right: 2px;
+  .header .shop-logo {
+    font-size: 1.1rem;
   }
-  .shop.no-before::before {
-  display: none;
-  content: none;
-}
+  .header .shop-menu {
+    font-size: 1.1rem;
+    color: var(--button-text-01);
+  }
   nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
     width: 100%;
-    border: red solid 1px;
     color: var(--button-text-01);
     font-size: 1.5rem;
     position: relative;
@@ -39,14 +30,15 @@
     flex-direction: column;
     width: 170px;
     margin-bottom: 1rem;
-    border: red solid 1px;
+    padding: 0.5rem;
+    background-color: var(--product-container-color);
+    border-radius: 5px;
   }
   .product-container {
-    border: red solid 1px;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(2, 1fr);
-    padding: .5rem;
+    padding: 0.5rem;
     overflow: hidden;
   }
   .show-more {
@@ -63,7 +55,7 @@
     background-color: var(--button-text-01);
     bottom: 30px;
   }
-   .show-more::before {
+  .show-more::before {
     content: "";
     top: 0;
     left: 0;
@@ -80,6 +72,39 @@
     transform: scaleX(1);
   }
   .show-more:hover {
+    color: var(--button-text-01);
+  }
+  .add-to-cart {
+    padding: 5px;
+    border-radius: 100px;
+    z-index: 100;
+    font-size: 0.7rem;
+    border: 0;
+    color: var(--text-color-01);
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s ease-in-out;
+    background-color: var(--button-text-01);
+  }
+
+  .add-to-cart::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+    background-color: var(--button-hover-color);
+  }
+  .add-to-cart:hover::before {
+    transform: scaleX(1);
+  }
+  .add-to-cart:hover {
     color: var(--button-text-01);
   }
 }
