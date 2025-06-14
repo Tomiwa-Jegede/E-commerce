@@ -27,6 +27,5 @@ addToCart.forEach(btn => {
       cart.push(productToAdd);
     }
     localStorage.setItem('cart', JSON.stringify(cart))
-    console.log(isInCart.quantity)
   })
 })
