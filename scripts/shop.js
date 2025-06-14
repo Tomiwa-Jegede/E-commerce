@@ -7,7 +7,7 @@ let productHTML = '';
 products.forEach(p => {
   productHTML += ` <div class="products">
         <img src=${p.img} alt="">
-        Price:${p.price}
+        Price: &#8358;${p.price}
         <button id=${p.id} class="add-to-cart">
           ADD TO CART
         </button>
@@ -26,6 +26,13 @@ addToCart.forEach(btn => {
     else {
       cart.push(productToAdd);
     }
+    btn.textContent = "ADDED"
+    btn.disable = true
+
+    setTimeout(() => {
+      btn.textContent = "ADD TO CART"
+      btn.disable = true
+    },700)
     localStorage.setItem('cart', JSON.stringify(cart))
   })
 })
