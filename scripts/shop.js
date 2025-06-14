@@ -2,6 +2,7 @@ import { dropdown } from "./index.js"
 import { products } from "./product.js"
 dropdown();
 const productContainer = document.querySelector('.product-container');
+
 let productHTML = '';
 products.forEach(p => {
   productHTML += ` <div class="products">
@@ -13,8 +14,9 @@ products.forEach(p => {
       </div>`
 })
 productContainer.innerHTML = productHTML;
+
 /*---addToCart----*/
-const cart =JSON.parse(localStorage.getItem('cart')) || [];
+import { cart } from "./cart.js"
 const addToCart = document.querySelectorAll('.add-to-cart');
 addToCart.forEach(btn => {
   btn.addEventListener('click', () => {
