@@ -22,9 +22,11 @@ addToCart.forEach(btn => {
   btn.addEventListener('click', () => {
     const productToAdd = products.find(product => product.id === btn.id);
     const isInCart = cart.find(itemInCart => itemInCart.id === productToAdd.id);
-    if (isInCart) { console.log('items is already in the cart') }
-    else { cart.push(productToAdd) }
+    if (isInCart) { isInCart.quantity += 1 }
+    else {
+      cart.push(productToAdd);
+    }
     localStorage.setItem('cart', JSON.stringify(cart))
-    console.log(cart)
+    console.log(isInCart.quantity)
   })
 })

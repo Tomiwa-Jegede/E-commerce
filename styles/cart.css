@@ -11,7 +11,7 @@
 .cart-nav i {
   margin-right: 7rem;
 }
-.cancel {
+.remove-btn {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50px;
@@ -90,4 +90,11 @@ img {
   display: flex;
 
   width: 100px;
+}
+
+.empty-cart{
+  text-align: center;
+  padding:2rem;
+  font-weight:bold;
+  font-size:1.5rem;
 }
