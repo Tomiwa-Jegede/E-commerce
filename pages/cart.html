@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cart</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+  <nav>Your cart</nav>
+  <div class="cart-container">
+    <div class="product-in-cart">
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="../img/practice-image.png" alt="">
+            </td>
+            <td>2000</td>
+            <td class="quantity">
+              <div class="quantity-container">
+                1
+                <div class="add-remove-btn">
+                  <button>+</button>
+                  <button>-</button>
+                </div>
+              </div>
+
+            </td>
+            <td>6767</td>
+            <td>
+              <button class="cancel">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="order-summary">
+      <nav>Order Summary</nav>
+      <div class="checkout-container">
+        <div class="total-container">
+          <div>Total:</div>
+          <div>shipping:</div>
+        </div>
+        <div class="calc-total">
+          Total:
+        </div>
+      </div>
+      <button class="checkout-btn">
+        CHECKOUT
+      </button>
+    </div>
+  </div>
+</body>
+<script type="module" src="../scripts/cart.js"></script>
+
+</html>
