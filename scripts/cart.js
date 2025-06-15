@@ -82,7 +82,7 @@ orderSummaryHTML += `  <nav>Order Summary</nav>
 if (orderSummary) { orderSummary.innerHTML = orderSummaryHTML }
 /*-----checkout Btn-----*/
 const checkOutBtn = document.querySelector('.checkout-btn');
-const phoneNumber = '09166635320'
+const phoneNumber = '2349166635320'
 const total = cart.reduce((sum, item) => {
   return sum + (item.quantity * item.price)
 }, 0)
