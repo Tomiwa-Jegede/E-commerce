@@ -8,7 +8,7 @@ body {
 }
 :root {
   --text-color-01: #fffff0;
-  --button-text-01: #716e5e;
+ --button-text-01 : #716e5e;
   --button-hover-color: #908f72;
   --text-color-02: #fffdc9;
   --glass-color-02: #fdfdfd7d;
@@ -63,7 +63,7 @@ body {
     position: absolute;
     height: 100vh;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
   }
   .hero-section h1,
   .hero-section h4 {
@@ -81,7 +81,8 @@ body {
     position: relative;
     overflow: hidden;
     transition: color 0.5s ease-in-out;
-    background-color: var(--text-color-01);
+    color: var(--text-color-01);
+    background-color: var(--button-text-01);
   }
   .shop-now a {
     text-decoration: none;
@@ -97,7 +98,8 @@ body {
     position: absolute;
     transition: transform 0.5s ease-in-out;
     z-index: -1;
-    background-color: var(--button-hover-color);
+    color: var(--button-text-01);
+    background-color: var(--text-color-01);
   }
   .shop-now:hover::before {
     transform: scaleX(1);
@@ -119,7 +121,7 @@ body {
     color: var(--text-color-02);
   }
   .drop-down {
-    background-color: var(--glass-color-02);
+    background-color: var(--text-color-01);
     backdrop-filter: blur(50px);
     display: flex;
     align-items: center;
