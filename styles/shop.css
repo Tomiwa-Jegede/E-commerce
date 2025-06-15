@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
-@media (min-width: 375px) {
+@media (min-width: 340px) {
   body {
     font-family: "GFS Didot", serif;
   }

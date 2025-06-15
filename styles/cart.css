@@ -1,4 +1,4 @@
-@media (max-width: 375px) {
+@media (min-width: 340px) {
   body {
     font-family: "GFS Didot", serif;
   }
