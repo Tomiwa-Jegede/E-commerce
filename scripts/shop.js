@@ -2,7 +2,7 @@ import { dropdown } from "./index.js"
 import { products } from "./product.js"
 dropdown();
 const productContainer = document.querySelector('.product-container');
-
+const cartCounter = document.querySelector('.counter')
 let productHTML = '';
 products.forEach(p => {
   productHTML += ` <div class="products">
@@ -26,13 +26,22 @@ addToCart.forEach(btn => {
     else {
       cart.push(productToAdd);
     }
+    cartCounter.innerHTML = cart.length
     btn.textContent = "ADDED"
     btn.disable = true
 
     setTimeout(() => {
       btn.textContent = "ADD TO CART"
       btn.disable = true
-    },700)
+    }, 700)
     localStorage.setItem('cart', JSON.stringify(cart))
+    if (cart.length === 1) { location.reload() }
   })
 })
+/*----Cart Counter----*/
+cartCounter.textContent = cart.length
+if (cart.length === 0) { cartCounter.style.display = 'none' }
+else {
+  cartCounter.style.display = 'flex'
+}
+

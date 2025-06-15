@@ -1,3 +1,6 @@
+body {
+  font-family: "GFS Didot", serif;
+}
 .cart-container {
   height: 100vh;
   display: flex;
@@ -8,10 +11,16 @@
   display: flex;
   justify-content: flex-start;
 }
-.cart-nav i {
+.cart-nav button {
+  font-size: 1.3rem;
+  border: none;
+  background-color: white;
   margin-right: 7rem;
+  color: var(--button-text-01);
 }
 .remove-btn {
+  color: var(--text-color-01);
+  background-color: var(--button-text-01);
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50px;
@@ -19,6 +28,8 @@
 }
 
 .sub-btn {
+  color: var(--text-color-01);
+  background-color: var(--button-text-01);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,6 +39,8 @@
   margin-right: 5px;
 }
 .add-btn {
+  color: var(--text-color-01);
+  background-color: var(--button-text-01);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,11 +65,15 @@
   padding: 1rem;
 }
 .checkout-btn {
-  border: #8080801f solid 1px;
+  color: var(--text-color-02);
   padding: 1rem;
   background-color: var(--button-text-01);
 }
-
+.cart-header li {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--button-text-01);
+}
 .cart-body ul li {
   list-style: none;
   display: flex;
@@ -70,7 +87,7 @@
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   place-items: center;
 }
-.product-in-cart ul{
+.product-in-cart ul {
   border-bottom: var(--product-container-color) solid 1px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
@@ -92,9 +109,43 @@ img {
   width: 100px;
 }
 
-.empty-cart{
+.empty-cart {
   text-align: center;
-  padding:2rem;
-  font-weight:bold;
-  font-size:1.5rem;
+  padding: 2rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.order-summary span {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--button-text-01);
+}
+
+footer {
+  background-color: var(--button-text-01);
+}
+footer div {
+  padding: 2rem 0;
+
+  margin-left: 0.5em;
+}
+footer h4 {
+  color: var(--text-color-01);
+}
+footer h2 {
+  color: var(--text-color-02);
+}
+footer div:nth-child(5) {
+  display: flex;
+  width: 23rem;
+  align-items: center;
+
+  justify-content: center;
+}
+.socials a {
+  margin-right: 0.5rem;
+}
+.copyWrite {
+  text-align: center;
+  color: var(--text-color-02);
 }

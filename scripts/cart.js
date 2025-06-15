@@ -69,11 +69,11 @@ cart.forEach(item => {
 orderSummaryHTML += `  <nav>Order Summary</nav>
       <div class="checkout-container">
         <div class="total-container">
-          <div>Sub-Total: &#8358;${subTotal}</div>
-          <div>Shipping: Free</div>
+          <div><span>Sub-Total:</span> &#8358;${subTotal}</div>
+          <div><span>Shipping:</span> Free</div>
         </div>
         <div class="calc-total">
-          Total: &#8358;${subTotal}
+          <span>Total:</span> &#8358;${subTotal}
         </div>
       </div>
       <button class="checkout-btn">
