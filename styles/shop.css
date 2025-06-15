@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 @media (min-width: 375px) {
   body {
     font-family: "GFS Didot", serif;
@@ -10,35 +13,35 @@
     font-size: 1.1rem;
   }
   .header .shop-menu {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 4rem;
     font-size: 1.1rem;
     color: var(--button-text-01);
-    position:relative
+    position: relative;
   }
   .header .menu {
     color: var(--button-text-01);
   }
-.shop-menu .counter{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  width:15px;
-  height:15px;
-  position:absolute;
-  background-color:var( --button-hover-color);
-  border-radius:50px;
-  font-size:12px;
-  top:-9px;
-  right:37px;
-  color:var(--text-color-01);
-}
-.shop-menu a{
-  text-decoration: none;
-  color:var(--button-text-01);
-}
+  .shop-menu .counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: var(--button-hover-color);
+    border-radius: 50px;
+    font-size: 12px;
+    top: -9px;
+    right: 37px;
+    color: var(--text-color-01);
+  }
+  .shop-menu a {
+    text-decoration: none;
+    color: var(--button-text-01);
+  }
   nav {
     display: flex;
     justify-content: center;
@@ -135,7 +138,4 @@
   .add-to-cart:hover {
     color: var(--text-color-01);
   }
-}
-html {
-  scroll-behavior: smooth;
 }

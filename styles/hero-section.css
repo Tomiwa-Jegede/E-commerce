@@ -14,8 +14,9 @@ body {
   --glass-color-02: #fdfdfd7d;
   --text-color-03: #546e94b1;
   --product-container-color: #dedcdc36;
+  --logo: clamp(1rem, 0.8261rem + 0.8696vw, 1.5rem);
 }
-@media (min-width: 375px) {
+@media (min-width: 340px) {
   .header {
     display: flex;
     align-items: center;
@@ -25,17 +26,17 @@ body {
     z-index: 100;
   }
   .header .logo {
-    font-size: 1.1rem;
+    font-size: var(--logo);
     color: var(--text-color-02);
   }
-  .header .menu i{
+  .header .menu i {
     font-size: 1.1rem;
     color: var(--text-color-02);
   }
   .slogan {
     padding-top: 1.5rem;
-    font-size: 3rem;
-    line-height: 65px;
+    font-size: clamp(3rem, 2.3043rem + 3.4783vw, 5rem);
+    line-height: clamp(4.0625rem, 2.8234rem + 6.1957vw, 7.625rem);
   }
   .slogan span {
     padding: 0.2rem 1.5rem;
@@ -46,7 +47,7 @@ body {
   }
   .sub-slogan {
     padding: 2rem 0;
-    font-size: 1rem;
+    font-size: var(--logo);
     color: var(--text-color-02);
   }
   .hero-section {
@@ -60,7 +61,7 @@ body {
   .hero-section::before {
     content: "";
     position: absolute;
-    height:100vh;
+    height: 100vh;
     inset: 0;
     background: rgba(0, 0, 0, 0.4);
   }
@@ -109,7 +110,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 15vw;
+    width: clamp(3.125rem, 2.1467rem + 4.8913vw, 5.9375rem);
   }
   .socials a {
     font-size: 1.5rem;
@@ -137,8 +138,8 @@ body {
   }
   .drop-down ul li {
     list-style: none;
-    display: flex;;
-    width:4rem;
+    display: flex;
+    width: 4rem;
     align-items: center;
     justify-content: space-between;
     color: var(--button-text-01);
@@ -170,5 +171,45 @@ body {
     right: 20px;
     position: absolute;
     color: var(--button-text-01);
+  }
+  .desktop-nav-bar {
+    display: none;
+  }
+}
+@media (min-width: 730px) {
+  .slogan {
+    padding-top: 10rem;
+  }
+  .menu {
+    display: none;
+  }
+  .desktop-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+  }
+  .desktop-nav-bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .desktop-nav-bar ul li {
+    list-style: none;
+  }
+  .desktop-nav-bar ul li i {
+    visibility: hidden;
+  }
+  .desktop-nav-bar a {
+    text-decoration: none;
+    color: var(--text-color-02);
+  }
+}
+@media (min-width: 1024px) {
+  .slogan {
+    padding-top: 1.5rem;
+    font-size: 4rem;
+    line-height: 4rem;
   }
 }
