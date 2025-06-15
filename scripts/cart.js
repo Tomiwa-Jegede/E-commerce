@@ -91,7 +91,7 @@ accountNumber += `  <div class="account-details">
       <div><span>Total:</span> &#8358;${subTotal}</div>
       <button class="paid-btn">I HAVE PAID</button>
     </div>`
-account.innerHTML = accountNumber
+if (account) { account.innerHTML = accountNumber }
 /*-----checkout Btn-----*/
 const paidBtn = document.querySelector('.paid-btn');
 const phoneNumber = '2349166635320'
@@ -113,16 +113,18 @@ if (paidBtn) {
 /*------Copy To Clip-Board----*/
 const copy = document.querySelector('.account-details div i');
 const copied = document.querySelector('.copied')
-copy.addEventListener('click', c => {
-  const copiedAccountNumber = navigator.clipboard.writeText(accNum);
-  copiedAccountNumber
-    .then(() => {
-      copied.style.opacity = '.8'
-      setTimeout(() => {
-        copied.style.opacity = '0'
-      }, 2000)
-    })
-    .catch(() => {
-      copied.textContent = 'Failed to copy'
-    })
-})
+if (copy) {
+  copy.addEventListener('click', () => {
+    const copiedAccountNumber = navigator.clipboard.writeText(accNum);
+    copiedAccountNumber
+      .then(() => {
+        copied.style.opacity = '.8'
+        setTimeout(() => {
+          copied.style.opacity = '0'
+        }, 2000)
+      })
+      .catch(() => {
+        copied.textContent = 'Failed to copy'
+      })
+  })
+}
