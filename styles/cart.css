@@ -66,6 +66,7 @@
   }
   .checkout-btn {
     color: var(--text-color-02);
+    width:100%;
     padding: 1rem;
     background-color: var(--button-text-01);
   }

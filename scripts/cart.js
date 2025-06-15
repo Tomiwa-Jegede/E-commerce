@@ -76,18 +76,31 @@ orderSummaryHTML += `  <nav>Order Summary</nav>
           <span>Total:</span> &#8358;${subTotal}
         </div>
       </div>
-      <button class="checkout-btn">
+     <a href="account.html" target="_blank"> <button class="checkout-btn">
         CHECKOUT
-      </button>`
+      </button></a>`
 if (orderSummary) { orderSummary.innerHTML = orderSummaryHTML }
+/*------account Number Greneration-----*/
+const account = document.querySelector('.account-page');
+let accountNumber = ""
+let accNum = "2049085596"
+accountNumber += `  <div class="account-details">
+      <div class="account-number"><span>Account Number:</span> ${accNum} <i class="fa-solid fa-clone"></i><div class="copied">Copied</div></div>
+      <div class="account-name"><span>Account Name:</span> Tomiwa Jegede</div>
+      <div class="account-name"><span>Bank:</span> Kuda</div>
+      <div><span>Total:</span> &#8358;${subTotal}</div>
+      <button class="paid-btn">I HAVE PAID</button>
+    </div>`
+account.innerHTML = accountNumber
 /*-----checkout Btn-----*/
-const checkOutBtn = document.querySelector('.checkout-btn');
+const paidBtn = document.querySelector('.paid-btn');
 const phoneNumber = '2349166635320'
 const total = cart.reduce((sum, item) => {
   return sum + (item.quantity * item.price)
 }, 0)
-if (checkOutBtn) {
-  checkOutBtn.addEventListener('click', () => {
+if (paidBtn) {
+  paidBtn.addEventListener('click', () => {
+    localStorage.removeItem('cart')
     let message = '*Your order*:\n'
     cart.forEach((item, index) => {
       message += `${index + 1}. ${item.name} x${item.quantity} - ₦${item.quantity * item.price}\n `
@@ -97,4 +110,19 @@ if (checkOutBtn) {
     window.open(whatsApp, '_blank')
   })
 }
-
+/*------Copy To Clip-Board----*/
+const copy = document.querySelector('.account-details div i');
+const copied = document.querySelector('.copied')
+copy.addEventListener('click', c => {
+  const copiedAccountNumber = navigator.clipboard.writeText(accNum);
+  copiedAccountNumber
+    .then(() => {
+      copied.style.opacity = '.8'
+      setTimeout(() => {
+        copied.style.opacity = '0'
+      }, 2000)
+    })
+    .catch(() => {
+      copied.textContent = 'Failed to copy'
+    })
+})

@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.account-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.account-page span {
+  font-weight: 600;
+  color: var(--button-text-01);
+}
+.account-page button {
+  width: 100%;
+  color: var(--text-color-02);
+  padding: 1rem;
+  background-color: var(--button-text-01);
+}
+.account-details {
+  border: var(--button-text-01) solid 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 2rem;
+  position: relative;
+  background-color: var(--product-container-color);
+}
+.account-details div {
+  border-bottom: #908f72 solid 1px;
+  padding: 1rem;
+}
+.account-details div i {
+  color: var(--button-text-01);
+}
+.account-details div:nth-child(4) {
+  border-bottom: none;
+  padding: 1rem;
+}
+.copied {
+  position: absolute;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  top: -5px;
+  right: -20px;
+  background-color: var(--button-text-01);
+  color:var(--text-color-01);
+  opacity:0
+}
