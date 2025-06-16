@@ -7,7 +7,7 @@ categoriesContainer.forEach(c => {
         <div class="categories-img">
           <img src=${c.img}>
         </div>
-        <div>${c.name}</div>
+        <div class="category-name">${c.name}</div>
       </div>
     </a>`
 });
