@@ -1,12 +1,13 @@
 import { dropdown } from "./index.js"
-import { products } from "./product.js"
+import { jersey } from "./product.js"
 dropdown();
 const productContainer = document.querySelector('.product-container');
 const cartCounter = document.querySelector('.counter')
 let productHTML = '';
-products.forEach(p => {
+jersey.forEach(p => {
   productHTML += ` <div class="products">
-        <div class="image-container"><img src=${p.img} alt=""></div>
+      <div class="image-container"><img src=${p.img} alt=""></div>
+        <div><span>Name:</span> ${p.name}</div>
         <div><span>Price:</span> &#8358;${p.price}</div>
         <button id=${p.id} class="add-to-cart">
           ADD TO CART
@@ -20,7 +21,7 @@ import { cart } from "./cart.js"
 const addToCart = document.querySelectorAll('.add-to-cart');
 addToCart.forEach(btn => {
   btn.addEventListener('click', () => {
-    const productToAdd = products.find(product => product.id === btn.id);
+    const productToAdd = jersey.find(product => product.id === btn.id);
     const isInCart = cart.find(itemInCart => itemInCart.id === productToAdd.id);
     if (isInCart) { isInCart.quantity += 1 }
     else {
@@ -45,3 +46,8 @@ else {
   cartCounter.style.display = 'flex'
 }
 
+const seen = new Set()
+jersey.forEach(p => {
+  console.log(seen.has(p.id))
+  if (seen.has(p.id)) { console.log(p) } else { seen.add(p.id) }
+})

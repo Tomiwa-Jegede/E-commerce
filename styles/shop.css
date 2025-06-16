@@ -53,6 +53,13 @@ html {
     position: relative;
   }
   img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .image-container {
+    width: 10rem;
+    height: 10rem;
     margin-bottom: 0.8rem;
     border-radius: 7px;
   }
@@ -65,9 +72,9 @@ html {
     background-color: var(--product-container-color);
     border-radius: 5px;
   }
-  .products span{
-    font-weight:bold;
-    color:var( --button-text-01)
+  .products span {
+    font-weight: bold;
+    color: var(--button-text-01);
   }
   .product-container {
     display: grid;
