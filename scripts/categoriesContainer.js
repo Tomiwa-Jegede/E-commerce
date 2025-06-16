@@ -6,7 +6,7 @@ export const categoriesContainer = [
   },
   {
     img: '../img/categories-icon/jersey-icon.png',
-    name: 'Jersey',
+    name: 'Jerseys',
     link:'jersy.html'
   },
   {
