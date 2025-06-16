@@ -35,7 +35,7 @@ export const products = [{
 },
 ]
 export const jersey = [{
-  name: 'Japan Special Edition',
+  name: 'Japan Special Ed',
   img: '../img/jersey/Japan-Special-Edition.JPG',
   id: '415443',
   price: '12000',
