@@ -1,0 +1,27 @@
+.coming-soon-container {
+  background: url(../img/hero-section-mobile.png);
+  height: 100vh;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--button-text-01);
+}
+.coming-soon-container::before {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.coming-soon-container div {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color-01);
+}
+.coming-soon button {
+  background-color: transparent;
+  color: var(--text-color-01);
+}

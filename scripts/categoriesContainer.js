@@ -12,6 +12,6 @@ export const categoriesContainer = [
   {
     img: '../img/categories-icon/snacks-icon.png',
     name: 'Snacks',
-    link:''
+    link:'comingSoonPage.html'
   },
 ]
