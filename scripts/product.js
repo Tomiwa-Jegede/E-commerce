@@ -59,7 +59,7 @@ export const jersey = [{
   quantity: 1
 },
 {
-  name: '21/22 Bayan 3rd Kit',
+  name: '21/22 Bayan',
   img: '../img/jersey/Bayan.JPG',
   id: '024524',
   size: 'XL',
