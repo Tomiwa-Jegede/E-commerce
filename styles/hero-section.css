@@ -7,10 +7,10 @@ body {
   font-family: "Playfair Display", serif;
 }
 :root {
-  --text-color-01: #fffff0;
- --button-text-01 : #716e5e;
+  --text-color-01: #ffffff;
+  --button-text-01: #716e5e;
   --button-hover-color: #908f72;
-  --text-color-02: #fffdc9;
+  --text-color-02: #fff0be;
   --glass-color-02: #fdfdfd7d;
   --text-color-03: #546e94b1;
   --product-container-color: #dedcdc36;
@@ -51,7 +51,7 @@ body {
     color: var(--text-color-02);
   }
   .hero-section {
-    background-image: url(/img/hero-section-mobile.jpeg);
+    background-image: url(/img/hero-section-mobile.png);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -63,7 +63,7 @@ body {
     position: absolute;
     height: 100vh;
     inset: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
   }
   .hero-section h1,
   .hero-section h4 {
@@ -184,6 +184,9 @@ body {
   }
   .menu {
     display: none;
+  }
+  .hero-section {
+    background-image: url(/img/heroSection-desktop.png);
   }
   .desktop-nav-bar {
     display: flex;

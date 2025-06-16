@@ -7,7 +7,7 @@ let productHTML = '';
 products.forEach(p => {
   productHTML += ` <div class="products">
         <div class="image-container"><img src=${p.img} alt=""></div>
-        <div><span>Price:</span> &#8358;${p.price}</div>
+        <div><span>&#8358;${p.price}</span></div>
         <button id=${p.id} class="add-to-cart">
           ADD TO CART
         </button>

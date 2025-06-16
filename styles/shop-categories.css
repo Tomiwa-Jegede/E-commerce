@@ -11,7 +11,7 @@
   color: var(--button-text-01);
 }
 
-.category-nav{
+.category-nav {
   display: flex;
   justify-content: flex-start;
 }
@@ -22,11 +22,11 @@
   margin-right: 5rem;
   color: var(--button-text-01);
 }
-
 .categories-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 .categories-img {
   width: 5rem;

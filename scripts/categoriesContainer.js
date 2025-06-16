@@ -1,16 +1,16 @@
 export const categoriesContainer = [
   {
-    img: '',
+    img: '../img/categories-icon/beauty-icon.png',
     name: 'Beauty',
     link:'beauty.html'
   },
   {
-    img: '',
+    img: '../img/categories-icon/jersey-icon.png',
     name: 'Jersey',
     link:'jersy.html'
   },
   {
-    img: '',
+    img: '../img/categories-icon/snacks-icon.png',
     name: 'Snacks',
     link:''
   },
