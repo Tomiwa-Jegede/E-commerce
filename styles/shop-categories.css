@@ -6,7 +6,10 @@
 .categories-container .cart-nav button {
   color: var(--text-color-01);
 }
-
+.categories-container .cart-nav{
+  width:fit-content;
+  background-color:transparent;
+}
 .shop-categories {
   height: 90vh;
   display: grid;
