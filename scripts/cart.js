@@ -128,3 +128,8 @@ if (copy) {
       })
   })
 }
+/*----check if it went back or not-----*/
+window.addEventListener('pageshow', e => {
+  const backward = performance.getEntriesByType('navigation').type === 'back-forward';
+  if (e.persisted || backward) {location.reload()}
+})
