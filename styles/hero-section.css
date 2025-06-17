@@ -158,7 +158,7 @@ body {
     transition: transform 0.5s ease-in-out;
     transform-origin: right;
     padding: 0 1rem;
-    z-index: 200;
+    z-index: 1000;
     font-weight: 600;
   }
   .drop-down ul li {
