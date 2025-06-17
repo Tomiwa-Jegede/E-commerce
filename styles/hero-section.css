@@ -24,6 +24,8 @@ body {
     width: 100%;
     padding: 1rem;
     z-index: 100;
+    animation: fadein 0.5s ease-in;
+    transform-origin: bottom;
   }
   .header .logo {
     font-size: var(--logo);
@@ -37,18 +39,28 @@ body {
     padding-top: 1.5rem;
     font-size: clamp(3rem, 2.3043rem + 3.4783vw, 5rem);
     line-height: clamp(4.0625rem, 2.8234rem + 6.1957vw, 7.625rem);
+    opacity: 0;
+    animation: fadein 0.5s 0.5s ease-in forwards;
+    transform-origin: bottom;
   }
   .slogan span {
     padding: 0.2rem 1.5rem;
     background-color: var(--button-text-01);
     border-radius: 50px;
-    transform: rotate(10deg);
     display: inline-block;
+    opacity: 0;
+    animation: Spanfadein 0.5s 1s ease-in forwards;
+    transform-origin: bottom;
   }
   .sub-slogan {
     padding: 2rem 0;
     font-size: var(--logo);
     color: var(--text-color-02);
+    animation: fadein 0.5s ease-in;
+    transform-origin: bottom;
+    opacity: 0;
+    animation: fadein 0.5s 1.5s ease-in forwards;
+    transform-origin: bottom;
   }
   .hero-section {
     background-image: url(/img/hero-section-mobile.png);
@@ -83,6 +95,9 @@ body {
     transition: color 0.5s ease-in-out;
     color: var(--text-color-01);
     background-color: var(--button-text-01);
+    opacity: 0;
+    animation: fadein 0.5s 2s ease-in forwards;
+    transform-origin: bottom;
   }
   .shop-now a {
     text-decoration: none;
@@ -113,6 +128,9 @@ body {
     align-items: center;
     justify-content: space-between;
     width: clamp(3.125rem, 2.1467rem + 4.8913vw, 5.9375rem);
+    opacity: 0;
+    animation: fadein 0.5s 2.5s ease-in forwards;
+    transform-origin: bottom;
   }
   .socials a {
     font-size: 1.5rem;
@@ -216,5 +234,27 @@ body {
     padding-top: 1.5rem;
     font-size: 4rem;
     line-height: 4rem;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+@keyframes Spanfadein {
+  from {
+    opacity: 0;
+    transform: scaleY(0);
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+    transform: rotate(10deg);
   }
 }
