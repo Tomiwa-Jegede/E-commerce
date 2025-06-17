@@ -11,7 +11,7 @@
 .shop-categories {
   height: 90vh;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   align-items: flex-start;
   justify-items: center;
   padding: 1rem;
@@ -34,8 +34,8 @@
   border-radius: 5px;
 }
 .categories-img {
-  width: 5rem;
-  height: 5rem;
+  width: 8rem;
+  height: 8rem;
 }
 .categories-container::before {
   content: "";
