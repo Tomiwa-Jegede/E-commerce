@@ -15,7 +15,7 @@ export const products = [{
 {
   name: 'black/purple',
   img: '../img/scrunchie/purple&black-Scrunchie.png',
-  id: '615246',
+  id: '435234',
   price: '3000',
   quantity: 1
 }

@@ -6,21 +6,25 @@
   .cart-container {
     display: flex;
     flex-direction: column;
-    padding-top: 4rem;
+    padding-top: 5rem;
   }
   .cart-nav {
     display: flex;
     justify-content: flex-start;
     position: fixed;
     padding: 1rem;
-    z-index:550;
-    width:100%;
-    background-color:var(--text-color-01);
+    z-index: 550;
+    width: fit-content;
+    top: 0;
+  }
+  .cart-container .cart-nav {
+    width: 100%;
+    background-color: var(--text-color-01);
   }
   .cart-nav button {
     font-size: 1.3rem;
     border: none;
-    background-color:transparent;
+    background-color: transparent;
     margin-right: 7rem;
     color: var(--button-text-01);
   }
