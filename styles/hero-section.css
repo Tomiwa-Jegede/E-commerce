@@ -30,7 +30,6 @@ body {
     background-color:transparent;
   }
   .header {
-    border:red solid;
     display: flex;
     align-items: center;
     justify-content: space-between;
