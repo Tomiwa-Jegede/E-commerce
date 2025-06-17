@@ -24,6 +24,9 @@ html {
   .header .menu {
     color: var(--button-text-01);
   }
+  .shop .drop-down{
+    margin-top:6rem;
+  }
   .shop-menu .counter {
     display: flex;
     align-items: center;
@@ -98,7 +101,9 @@ html {
     transition: color 0.5s ease-in-out;
     background-color: var(--button-text-01);
   }
-
+.available-products{
+      padding-top:6rem;
+}
   .add-to-cart::before {
     content: "";
     top: 0;

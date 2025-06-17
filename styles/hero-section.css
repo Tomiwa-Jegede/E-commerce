@@ -17,7 +17,7 @@ body {
   --logo: clamp(1rem, 0.8261rem + 0.8696vw, 1.5rem);
 }
 @media (min-width: 340px) {
-  .header {
+  .hero-section .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,6 +26,19 @@ body {
     z-index: 100;
     animation: fadein 0.5s ease-in;
     transform-origin: bottom;
+    position: fixed;
+    background-color:transparent;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    z-index: 500;
+    position: fixed;
+    padding-top: 3.5rem;
+    background-color: var(--text-color-01);
   }
   .header .logo {
     font-size: var(--logo);
@@ -36,7 +49,7 @@ body {
     color: var(--text-color-02);
   }
   .slogan {
-    padding-top: 1.5rem;
+    padding-top: 6rem;
     font-size: clamp(3rem, 2.3043rem + 3.4783vw, 5rem);
     line-height: clamp(4.0625rem, 2.8234rem + 6.1957vw, 7.625rem);
   }
@@ -46,7 +59,7 @@ body {
     border-radius: 50px;
     display: inline-block;
     opacity: 0;
-    animation: Spanfadein 0.5s .5s ease-in forwards;
+    animation: Spanfadein 0.5s 0.5s ease-in forwards;
     transform-origin: bottom;
   }
   .sub-slogan {
