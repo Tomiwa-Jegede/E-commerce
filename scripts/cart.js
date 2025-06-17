@@ -70,7 +70,7 @@ orderSummaryHTML += `  <nav>Order Summary</nav>
       <div class="checkout-container">
         <div class="total-container">
           <div><span>Sub-Total:</span> &#8358;${subTotal}</div>
-          <div><span>Shipping:</span> Free</div>
+          <div><span>Shipping:</span>Pickup ONLY</div>
         </div>
         <div class="calc-total">
           <span>Total:</span> &#8358;${subTotal}
