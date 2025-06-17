@@ -1,7 +1,7 @@
 const shopCategories = document.querySelector('.shop-categories');
 import { categoriesContainer } from './categoriesContainer.js'
-import{cartCounter} from "./shop.js"
-import{cart}from "./cart.js"
+import { cartCounter } from "./shop.js"
+import { cart } from "./cart.js"
 let categories = ''
 categoriesContainer.forEach(c => {
   categories += `  <a href="${c.link}">
@@ -21,3 +21,7 @@ if (cart.length === 0) { cartCounter.style.display = 'none' }
 else {
   cartCounter.style.display = 'flex'
 }
+/*--------check if user went back to this page----*/
+window.addEventListener('pageshow', (e) => {
+  if (e.persisted || performance.getEntriesByType('navigation').type === "back_forward") {windowlocation.reload()}
+})
