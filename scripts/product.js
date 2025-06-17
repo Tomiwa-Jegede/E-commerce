@@ -1,7 +1,7 @@
 export const products = [{
   name: 'Blue Scruchie',
   img: '../img/scrunchie/Blue-Scrunchie.jpg',
-  id: '415443',
+  id: '454254',
   price: '3000',
   quantity: 1
 },
@@ -39,7 +39,7 @@ export const jersey = [{
 {
   name: '23/24 Al-Ittihad',
   img: '../img/jersey/24-Al-Ittihad.JPG',
-  id: '615246',
+  id: '615243',
   size: 'XL',
   price: '12000',
   quantity: 1
