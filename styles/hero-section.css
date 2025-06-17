@@ -121,7 +121,7 @@ body {
     justify-content: space-between;
     width: clamp(3.125rem, 2.1467rem + 4.8913vw, 5.9375rem);
     opacity: 0;
-    animation: fadein 0.5s 2.5s ease-in forwards;
+    animation: fadein 0.5s 1s ease-in forwards;
     transform-origin: bottom;
   }
   .socials a {
