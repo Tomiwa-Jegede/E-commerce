@@ -74,7 +74,6 @@ body {
     align-items: center;
     flex-direction: column;
     color: var(--text-color-01);
-    border:red solid 1px;
   }
   .hero-section::before {
     content: "";
