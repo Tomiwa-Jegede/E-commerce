@@ -1,11 +1,11 @@
+
 .categories-container .header {
   background-color: transparent;
-  color:var(--text-color-01)
+  color: var(--text-color-01);
 }
 .categories-container .header i,
-.categories-container .cart-nav button
-{
-  color:var(--text-color-01)
+.categories-container .cart-nav button {
+  color: var(--text-color-01);
 }
 
 .shop-categories {
@@ -18,6 +18,7 @@
   position: relative;
 }
 .shop-categories a {
+  border: red solid 1px;
   margin-top: 3rem;
   text-align: center;
   padding: 0.5rem;
@@ -25,6 +26,7 @@
   background-color: var(--button-text-01);
   text-decoration: none;
   color: var(--button-text-01);
+  font-weight: 600;
 }
 
 .categories-img img {
@@ -34,8 +36,9 @@
   border-radius: 5px;
 }
 .categories-img {
-  width: 8rem;
-  height: 8rem;
+  width: 17rem;
+  height: 6rem;
+  margin: 1rem 0.5rem;
 }
 .categories-container::before {
   content: "";
