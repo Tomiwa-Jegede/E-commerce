@@ -1,6 +1,11 @@
 html {
   scroll-behavior: smooth;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
 @media (min-width: 340px) {
   body {
     font-family: "GFS Didot", serif;

@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
 .coming-soon-container {
   background: url(../img/hero-section-mobile.png);
   height: 100vh;

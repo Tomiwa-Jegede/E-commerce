@@ -69,16 +69,17 @@ body {
   }
   .hero-section {
     background-image: url(/img/hero-section-mobile.png);
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     align-items: center;
     flex-direction: column;
     color: var(--text-color-01);
+    border:red solid 1px;
   }
   .hero-section::before {
     content: "";
     position: absolute;
-    height: 100vh;
+    height: 100dvh;
     inset: 0;
     background: rgba(0, 0, 0, 0.7);
   }
