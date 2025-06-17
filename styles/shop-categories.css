@@ -1,3 +1,13 @@
+.categories-container .header {
+  background-color: transparent;
+  color:var(--text-color-01)
+}
+.categories-container .header i,
+.categories-container .cart-nav button
+{
+  color:var(--text-color-01)
+}
+
 .shop-categories {
   height: 90vh;
   display: grid;
@@ -8,25 +18,15 @@
   position: relative;
 }
 .shop-categories a {
-  text-align:center;
-  padding:.5rem;
-  border-radius: .5rem;
+  margin-top: 3rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   background-color: var(--button-text-01);
   text-decoration: none;
   color: var(--button-text-01);
 }
 
-.category-nav {
-  display: flex;
-  justify-content: flex-start;
-}
-.category-nav button {
-  font-size: 1.3rem;
-  border: none;
-  background-color: white;
-  margin-right: 5rem;
-  color: var(--button-text-01);
-}
 .categories-img img {
   width: 100%;
   height: 100%;
@@ -46,7 +46,7 @@
   z-index: 0;
 }
 .categories-container {
-    height: 100vh;
+  height: 100vh;
   background: url(../img/hero-section-mobile.png);
 }
 

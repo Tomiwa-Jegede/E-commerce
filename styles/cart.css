@@ -1,24 +1,24 @@
 @media (min-width: 340px) {
   body {
     font-family: "GFS Didot", serif;
+    font-size: 14px;
   }
   .cart-container {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    padding-top :3rem;
+    padding-top: 4rem;
   }
   .cart-nav {
     display: flex;
     justify-content: flex-start;
     position: fixed;
+    padding: 1rem;
     z-index:550;
-    background-color: white;
   }
   .cart-nav button {
     font-size: 1.3rem;
     border: none;
-    background-color: white;
+    background-color:transparent;
     margin-right: 7rem;
     color: var(--button-text-01);
   }
@@ -28,7 +28,6 @@
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50px;
-    margin-bottom: 20px;
   }
 
   .sub-btn {
@@ -58,6 +57,7 @@
     border: #8080801f solid 1px;
     margin: 2rem;
     display: flex;
+    font-size: 1rem;
     flex-direction: column;
   }
   .total-container div {
