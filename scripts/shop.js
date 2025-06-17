@@ -2,7 +2,7 @@ import { dropdown } from "./index.js"
 import { products } from "./product.js"
 dropdown();
 const productContainer = document.querySelector('.product-container');
-const cartCounter = document.querySelector('.counter')
+export const cartCounter = document.querySelector('.counter')
 let productHTML = '';
 products.forEach(p => {
   productHTML += ` <div class="products">
@@ -13,7 +13,7 @@ products.forEach(p => {
         </button>
       </div>`
 })
-productContainer.innerHTML = productHTML;
+if(productContainer){productContainer.innerHTML = productHTML;}
 
 /*---addToCart----*/
 import { cart } from "./cart.js"

@@ -1,5 +1,7 @@
 const shopCategories = document.querySelector('.shop-categories');
 import { categoriesContainer } from './categoriesContainer.js'
+import{cartCounter} from "./shop.js"
+import{cart}from "./cart.js"
 let categories = ''
 categoriesContainer.forEach(c => {
   categories += `  <a href="${c.link}">
@@ -12,3 +14,10 @@ categoriesContainer.forEach(c => {
     </a>`
 });
 shopCategories.innerHTML = categories
+
+/*----Cart Counter----*/
+cartCounter.textContent = cart.length
+if (cart.length === 0) { cartCounter.style.display = 'none' }
+else {
+  cartCounter.style.display = 'flex'
+}
