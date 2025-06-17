@@ -23,5 +23,6 @@ else {
 }
 /*--------check if user went back to this page----*/
 window.addEventListener('pageshow', (e) => {
-  if (e.persisted || performance.getEntriesByType('navigation').type === "back_forward") {windowlocation.reload()}
+  let backward=performance.getEntriesByType('navigation')[0].type==='back-forward';
+  if(e.persisted||backward){window.location.reload()};
 })
