@@ -1,38 +1,24 @@
 export const products = [{
-  name: 'product 01',
-  img: '../img/scrunchie/product-01.png',
+  name: 'Blue Scruchie',
+  img: '../img/scrunchie/Blue-Scrunchie.jpg',
   id: '415443',
   price: '3000',
   quantity: 1
 },
 {
-  name: 'product 02',
-  img: '../img/scrunchie/product-02.png',
+  name: 'Pink Scrunchie',
+  img: '../img/scrunchie/Pink-Scrunchie.jpg',
   id: '615246',
   price: '3000',
   quantity: 1
 },
 {
-  name: 'product 03',
-  img: '../img/scrunchie/product-03.png',
-  id: '765884',
+  name: 'black/purple',
+  img: '../img/scrunchie/purple&black-Scrunchie.png',
+  id: '615246',
   price: '3000',
   quantity: 1
-},
-{
-  name: 'product 04',
-  img: '../img/scrunchie/product-04.png',
-  id: '078957',
-  price: '3000',
-  quantity: 1
-},
-{
-  name: 'product 05',
-  img: '../img/scrunchie/product-05.png',
-  id: '058456',
-  price: '3000',
-  quantity: 1
-},
+}
 ]
 export const jersey = [{
   name: 'Japan Special Ed',
