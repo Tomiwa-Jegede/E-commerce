@@ -2,21 +2,21 @@ export const products = [{
   name: 'Blue Scruchie',
   img: '../img/scrunchie/Blue-Scrunchie.jpg',
   id: '454254',
-  price: '3000',
+  price: '2000',
   quantity: 1
 },
 {
   name: 'Pink Scrunchie',
   img: '../img/scrunchie/Pink-Scrunchie.jpg',
   id: '615246',
-  price: '3000',
+  price: '2000',
   quantity: 1
 },
 {
   name: 'black/grey',
   img: '../img/scrunchie/grey&black-Scrunchie.jpg',
   id: '435234',
-  price: '3000',
+  price: '2000',
   quantity: 1
 }
 ]
