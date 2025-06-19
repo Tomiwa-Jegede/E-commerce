@@ -14,4 +14,9 @@ export const categoriesContainer = [
     name: 'SNACKS',
     link:'comingSoonPage.html'
   },
+  {
+    img: '../img/categories-icon/beauty&accessories-icon.jpg',
+    name: 'BEAUTY & ACCESSORIES',
+    link:'Accessories.html'
+  },
 ]

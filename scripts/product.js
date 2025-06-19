@@ -85,3 +85,41 @@ export const jersey = [{
   quantity: 1
 },
 ]
+export const accessories = [
+  {
+    name: '2in1 Lipgloss & Keychain',
+    img: '../img/Accessories/2in1Keychain-lipgloss.jpeg',
+    id: '415497',
+    price: '2200',
+    quantity: 1
+  },
+  {
+    name: 'Gloss Wave',
+    img: '../img/Accessories/Gloss-wave.jpeg',
+    id: '419069',
+    price: '2000',
+    quantity: 1
+  },
+  {
+    name: 'Shiny Gloss',
+    img: '../img/Accessories/Shiny-lipgloss.jpeg',
+    id: '415424',
+    price: '700',
+    quantity: 1
+  },
+  {
+    name: 'Tiny Gold Chain',
+    img: '../img/Accessories/tiny-goldchain.jpeg',
+    id: '415753',
+    price: '3200',
+    quantity: 1
+  },
+  {
+    name: 'Vitamin C Serum',
+    img: '../img/Accessories/vitamin-c-serum.jpeg',
+    id: '415443',
+    price: '4800',
+    quantity: 1
+  },
+
+]
