@@ -4,7 +4,7 @@ html {
 * {
   padding: 0;
   margin: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 @media (min-width: 340px) {
   body {
@@ -29,8 +29,8 @@ html {
   .header .menu {
     color: var(--button-text-01);
   }
-  .shop .drop-down{
-    margin-top:6rem;
+  .shop .drop-down {
+    margin-top: 6rem;
   }
   .shop-menu .counter {
     display: flex;
@@ -49,6 +49,9 @@ html {
   .shop-menu a {
     text-decoration: none;
     color: var(--button-text-01);
+    display:flex;
+    align-items:center;
+    justify-content: center;
   }
   nav {
     display: flex;
@@ -106,9 +109,9 @@ html {
     transition: color 0.5s ease-in-out;
     background-color: var(--button-text-01);
   }
-.available-products{
-      padding-top:6rem;
-}
+  .available-products {
+    padding-top: 6rem;
+  }
   .add-to-cart::before {
     content: "";
     top: 0;
