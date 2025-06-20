@@ -131,7 +131,7 @@ export const vendorPlans = [
     id: "1"
   },
   {
-    name: 'basic Vendor (free)',
+    name: 'Vendor Pro',
     price: '10,000',
     id: "2"
   },
