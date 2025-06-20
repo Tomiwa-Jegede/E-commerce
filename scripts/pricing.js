@@ -35,7 +35,9 @@ export let vendorCart = savedData || [];
 buyPlanBtn.forEach(btn => {
   btn.addEventListener('click', () => {
     const vendor = vendorPlans.find(v => v.id === btn.id)
+    const isInCart = vendorCart.find(item => item.id === btn.id)
     if (vendor) { vendorCart.push(vendor) }
+    if (isInCart) { return; }
     localStorage.setItem('vendorCart', JSON.stringify(vendorCart))
   })
 });

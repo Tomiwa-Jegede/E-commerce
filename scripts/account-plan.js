@@ -45,5 +45,7 @@ if (paidBtn) {
     })
   })
 }
-
+vendorCart.forEach(v=>{
+  console.log(v)
+})
 
