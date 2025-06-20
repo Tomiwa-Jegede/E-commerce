@@ -42,10 +42,16 @@ if (paidBtn) {
       const EncodedMessage = encodeURIComponent(message)
       const whatsApp = `https://wa.me/${phoneNumber}?text=${EncodedMessage}`;
       window.open(whatsApp, '_blank')
+      location.reload();
     })
   })
 }
-vendorCart.forEach(v=>{
+window.addEventListener('pageshow', (e) => {
+  let backward = performance.getEntriesByType('navigation')[0].type === 'back-forward';
+  if (e.persisted || backward) { window.location.reload() };
+})
+
+vendorCart.forEach(v => {
   console.log(v)
 })
 

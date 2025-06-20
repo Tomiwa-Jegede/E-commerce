@@ -42,4 +42,8 @@ buyPlanBtn.forEach(btn => {
   })
 });
 console.log(vendorCart)
-
+/*--------check if user went back to this page----*/
+window.addEventListener('pageshow', (e) => {
+  let backward=performance.getEntriesByType('navigation')[0].type==='back-forward';
+  if(e.persisted||backward){window.location.reload()};
+})
