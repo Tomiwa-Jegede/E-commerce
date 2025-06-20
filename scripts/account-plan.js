@@ -41,7 +41,7 @@ if (paidBtn) {
       let message = `*PLAN*\ni would like the ${v.name}\nTotal:${v.price}`;
       const EncodedMessage = encodeURIComponent(message)
       const whatsApp = `https://wa.me/${phoneNumber}?text=${EncodedMessage}`;
-      window.open(whatsApp, '_blank')
+      window.open(whatsApp, '_self')
       location.reload();
     })
   })
