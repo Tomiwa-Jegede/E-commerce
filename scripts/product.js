@@ -123,3 +123,21 @@ export const accessories = [
   },
 
 ]
+
+export const vendorPlans = [
+  {
+    name: 'basic Vendor (free)',
+    price: 'Free',
+    id: "1"
+  },
+  {
+    name: 'basic Vendor (free)',
+    price: '10,000',
+    id: "2"
+  },
+  {
+    name: 'Vendor Premium',
+    price: '20,000',
+    id: "3"
+  },
+]
