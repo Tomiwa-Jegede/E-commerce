@@ -3,6 +3,7 @@ export const products = [{
   img: '../img/scrunchie/Blue-Scrunchie.jpg',
   id: '454254',
   price: '2000',
+  location: 'Available in Hostel',
   quantity: 1
 },
 {
@@ -10,13 +11,55 @@ export const products = [{
   img: '../img/scrunchie/Pink-Scrunchie.jpg',
   id: '615246',
   price: '2000',
+  location: 'Available in Hostel',
   quantity: 1
 },
 {
-  name: 'black/grey',
-  img: '../img/scrunchie/grey&black-Scrunchie.jpg',
-  id: '435234',
+  name: 'Pink Scrunchie',
+  img: '../img/scrunchie/Pink-Scrunchie.jpg',
+  id: '615246',
   price: '2000',
+  location: 'Available in Hostel',
+  quantity: 1
+},
+{
+  name: 'Baggi Jeans',
+  img: '../img/scrunchie/baggijeans.jpg',
+  id: '615246',
+  price: '25000',
+  location: 'Pre-order',
+  quantity: 1
+},
+{
+  name: 'Graphic Tee',
+  img: '../img/scrunchie/graphictees.jpg',
+  id: '615246',
+  price: '12000',
+  location: 'Pre-order (M,L,XL)',
+  quantity: 1
+},
+{
+  name: 'TFK(Savage Pants)',
+  img: '../img/scrunchie/savagepants.jpg',
+  id: '615246',
+  price: '12000',
+  location: 'Pre-order',
+  quantity: 1
+},
+{
+  name: 'SnapBack',
+  img: '../img/scrunchie/snapback.jpg',
+  id: '615246',
+  price: '12000',
+  location: 'Pre-order (Available In Different Colors)',
+  quantity: 1
+},
+{
+  name: 'TFK(TIE)',
+  img: '../img/scrunchie/tfk(tie).jpg',
+  id: '435234',
+  price: '3500',
+  location: 'Pre-order',
   quantity: 1
 }
 ]
